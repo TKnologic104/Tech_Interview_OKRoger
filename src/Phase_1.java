@@ -15,6 +15,9 @@ public class Phase_1 {
 	 * words are made up of: a-z, A-Z, 0-9, _
 	 * so remaining characters are treated as delimiters.
 	 * ex. High-five = High, five
+	 * 
+	 * Things to fix: apostrophes, numbers shouldn't be words.
+	 * 
 	 */
 	public static void main(String[] args) {
 		//Creating Map
@@ -23,7 +26,7 @@ public class Phase_1 {
 		try {
 			//Importing File
 			@SuppressWarnings("resource")
-			Scanner inFile = new Scanner(new FileReader("techInterview.txt"));
+			Scanner inFile = new Scanner(new FileReader("alice30.txt"));
 			
 			//Delimiter to separate words
 			while(inFile.hasNextLine()){
